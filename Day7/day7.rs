@@ -42,9 +42,9 @@ fn print_grid(grid: &Vec<Vec<&str>>) {
 }
 
 fn main() {
-    let input = fs::read_to_string("./input.txt").expect("Unable to parse input");
+    let input = fs::read_to_string("./input_test.txt").expect("Unable to parse input");
     let mut grid = parse(&input);
     let answer = process(&mut grid);
     println!("Answer: {}", answer);
-    //print_grid(&grid);
+    print_grid(&grid);
 }
